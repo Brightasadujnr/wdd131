@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Project</title>
+    <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+    <meta name="author" content="Bright Asadu Junior">
+    <title>Bright Junior Asadu - WDD 131 Project</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h>Hello World!!</h>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>WDD 131: Dynamic Web Fundamentals - Bright Junior Asadu</h1>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener"> Final Project</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! My name is Bright Junior Asadu, an aspiring digital marketer and entrepreneur from Ghana. I am passionate about affiliate marketing and building my brand, "assaybouy." 
+                    Currently, I am a BYU-Idaho student studying Computer Programming. I also enjoy learning new things like playing the piano and exploring opportunities in the digital world.
+                </p>
+                <img src="images/profile.jpg" alt="Profile picture of Bright Junior Asadu" width="120">
+            </div>
+            <h3>Kumasi, Ghana</h3>
+            <div class="location-content">
+                <p>
+                    Kumasi, the capital of Ghana's Ashanti Region, is a vibrant city known for its rich history and bustling Kejetia Market, the largest in West Africa. 
+                    The city's name originates from "kum" (tree) and "ase" (under). With a metropolitan population of over 3.4 million, Kumasi is a hub of trade and culture.
+                </p>
+                <img src="images/Flag_of_Kumasi.png" alt="Flag of Kumasi" width="120">
+            </div>
+        </section>
+
+        <!-- Web Development Resources Section -->
+        <section class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul class="resource-list">
+                <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
