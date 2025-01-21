@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 20px; /* Adds a 20px margin around the entire HTML content */
+    background-color: #f9f9f9; /* Optional: Set a background color for the margin space */
+
+}
+
+header, footer {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: black; /* Black background */
+}
+
+.nav-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Spread out items evenly */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding for links */
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: gray; /* Hover effect */
+}
+
+/* Main content and aside layout */
+.content {
+    display: flex;
+    flex-direction: row; /* Align main and aside side-by-side */
+    background-color: #ccc; /* Light gray background */
+    text-align: left;
+}
+
+main {
+    flex: 3; /* Main content takes up more space */
+    padding: 100px;
+    background-color: #d3d3d3; /* Slightly darker gray for contrast */
+    text-align: left;
+}
+
+aside {
+    flex: 1; 
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
