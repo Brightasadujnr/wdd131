@@ -1,0 +1,50 @@
+/* temples.css - Base Styles (apply to all devices) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #4A007E;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.section {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+footer {
+    background: #4A007E;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
