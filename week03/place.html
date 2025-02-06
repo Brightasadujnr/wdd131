@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+        <meta name="author" content="Bright Asadu Junior">
+        <title>Bright Junior Asadu - WDD 131 Project</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="Scripts/place.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>My Dream Place</h1>
+        </header>    
+        <main>
+            <picture class="large-image">
+                <source srcset="images/Chess.webp" media="(min-width: 1000px)">
+                <source srcset="images/Chess.webp" media="(min-width: 550px)">
+                <img src="images/Chess.webp" alt="my chess">
+            </picture >
+            <section class="info">
+                <div class="overlay">
+                    <h2>Place Information</h2>
+                </div>
+                <div class="info-list">
+                    <ul>
+                        <li>Area: <span class="data">587,041 sq km</span></li>
+                        <li>Population: <span class="data">27,691,018</span></li>
+                        <li>Capital: <span class="data">Antananarivo</span></li>
+                        <li>Languages: <span class="data">Malagasy, French</span></li>
+                        <li>Currency: <span class="data">Malagasy Ariary</span></li>
+                        <li>Time Zone: <span class="data">UTC+3</span></li>
+                        <li>Calling Code: <span class="data">+261</span></li>
+                        <li>Internet TLD: <span class="data">.mg</span></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="weather-set">
+                <div class="weather-box">
+                    <h2>Weather</h2>
+                    <span id="wth-icon">
+                        <img src="images/weather-icon.svg" alt="weather icon" height="50" width="50">
+                    </span>
+                </div>
+                    <ul>
+                        <li>Temperature: <span class="data">10 c</span></li>
+                        <li>Conditions: <span class="data">Cloundy</span></li>
+                        <li>Wind: <span class="data">5 km/h</span></li>
+                        <li>Wind Chill: <span class="data">8.9 c</span></li>
+                    </ul>
+            </section>
+        </main>
+        <footer>
+            <p class="copyr">
+                <span id="year">2025</span> &copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana
+            </p>
+            <p>Last Modified: <time id="lastmodified"></time></p>
+            <button id="back-to-top">Back to Top</button>
+        </footer>
+    </body>
+</html>
