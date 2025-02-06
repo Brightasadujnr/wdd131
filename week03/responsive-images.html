@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Two source elements with media attributes -->
+                <source media="(min-width: 768px)" srcset="large-image.jpg">
+                <source media="(max-width: 767px)" srcset="small-image.jpg">
+                <!-- Fallback img element -->
+                <img src="default-image.jpg" alt="A description of the hero image">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>

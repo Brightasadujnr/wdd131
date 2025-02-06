@@ -4,7 +4,9 @@
         padding: 10px;
     }
 
-    
+    main {
+        grid-template-columns: 1fr;
+    }
 
     .info, .weather-set {
         margin: 10px 0;
