@@ -1,0 +1,23 @@
+/* For larger screens */
+@media screen and (min-width: 800px) {
+    body {
+        padding: 10px;
+    }
+
+    
+
+    .info, .weather-set {
+        margin: 10px 0;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .info h2, .weather-box h2 {
+        font-size: 1.5rem;
+    }
+}
