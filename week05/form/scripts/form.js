@@ -1,9 +1,9 @@
 // Product array
 const products = [
-  { name: "Product A" },
-  { name: "Product B" },
-  { name: "Product C" },
-  { name: "Product D" },
+  { name: "Computer" },
+  { name: "System" },
+  { name: "Phone" },
+  { name: "Keyboard" },
 ];
 
 // Dynamically populate the product select options
