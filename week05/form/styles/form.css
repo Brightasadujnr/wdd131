@@ -1,0 +1,154 @@
+/* Basic Reset */
+body, h1, form, label, input, select, textarea, button, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff; /* Improved contrast */
+  background-color: blueviolet;
+  padding: 10px; /* Added padding for better spacing */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Custom Star Rating with Dots */
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.rating label::before {
+  content: "•";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #ccc;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input[type="radio"]:checked ~ label {
+  color: #ffcc00;
+}
+
+.rating input[type="radio"]:checked ~ label::before {
+  color: #ffcc00;
+}
+
+/* Checkbox Group */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #555;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  display: block;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #4CAF50; /* Added background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #fff; /* Improved contrast */
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+footer p {
+  margin: 5px 0;
+}

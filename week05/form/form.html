@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+        <meta name="author" content="Bright Asadu Junior">
+        <title>Bright Junior Asadu - WDD 131 Project</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html">
+                <fieldset>
+                <div>
+                    <label for="Product">Choose a Product:</label>
+                    <select id="Product" name="product" required>
+                        <option value=""disabled selected>Choose a Product...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Overall Rating:</label>
+                    <div class="rating">
+                      <input type="radio" id="star1" name="rating" value="1" required>
+                      <label for="star1">☆</label>
+                      <input type="radio" id="star2" name="rating" value="2">
+                      <label for="star2">☆☆</label>
+                      <input type="radio" id="star3" name="rating" value="3">
+                      <label for="star3">☆☆☆</label>
+                      <input type="radio" id="star4" name="rating" value="4">
+                      <label for="star4">☆☆☆☆</label>
+                      <input type="radio" id="star5" name="rating" value="5">
+                      <label for="star5">☆☆☆☆☆</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="installation-date">Date of Installation:</label>
+                    <input type="date" id="installation-date" name="installation-date" required>
+                  </div>
+
+                  <fieldset>
+                    <legend>Which features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
+                    <div class="checkbox-group">
+                      <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+                      <label><input type="checkbox" id="ease-of-use" name="features" value="ease-of-use"> Ease of Use</label>
+                      <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+                      <label><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                    </div>
+                  </fieldset>
+
+                  <div class="form-group">
+                    <label for="written-review">Written Review (Optional):</label>
+                    <textarea id="written-review" name="written-review" rows="5"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="user-name">Your Name (Optional):</label>
+                    <input type="text" id="user-name" name="user-name">
+                  </div>
+                    
+                  <input type="submit" value="Post Review">
+                </fieldset>
+                </form>
+
+        </main>
+
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </footer>
+    </body>
+</html>
