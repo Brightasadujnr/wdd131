@@ -15,7 +15,7 @@
     <div class="content">
         <header>
             <h1>Dream Place</h1>
-            <nav>
+            <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="destination.html">Destinations</a></li>
@@ -23,8 +23,10 @@
                 <li><a href="plan.html">Plan Trip</a></li>
             </ul>
             </nav>
+            
             <div class="search-bar">
-            <input type="text" placeholder="Search...">
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="text" id="search" placeholder="Search...">
             </div>
         </header>
         <main>
@@ -38,19 +40,19 @@
             <h2>Popular Destinations</h2>
             <div class="destination-grid">
                 <div class="destination-card">
-                <img src="images/bali.jpg" alt="Bali, Indonesia">
-                <h3>Bali, Indonesia</h3>
-                <a href="destinations.html" class="btn">Explore</a>
+                <img src="images/Utah.webp" alt="Utah, United States">
+                <h3>Utah, United States</h3>
+                <a href="destination.html">Explore</a>
                 </div>
                 <div class="destination-card">
                 <img src="images/paris.webp" alt="Paris, France">
                 <h3>Paris, France</h3>
-                <a href="destinations.html" class="btn">Explore</a>
+                <a href="destination.html">Explore</a>
                 </div>
                 <div class="destination-card">
-                <img src="images/maldives.jpg" alt="Maldives">
-                <h3>Maldives</h3>
-                <a href="destinations.html" class="btn">Explore</a>
+                <img src="images/South_Africa.webp" alt="South Africa, Africa">
+                <h3>South Africa, Africa</h3>
+                <a href="destination.html">Explore</a>
                 </div>
             </div>
             </section>

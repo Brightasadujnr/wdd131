@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
-    <meta name="author" content="Bright Asadu Junior">
-    <title>Dream Place - Travel Planner</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/dream-place.css">
-    <link rel="stylesheet" href="styles/large-dream-place.css">
-    <script src="scripts/dream-place.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+  <meta name="author" content="Bright Asadu Junior">
+  <title>Dream Place - Travel Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dream-place.css">
+  <link rel="stylesheet" href="styles/large-dream-place.css">
+  <script src="scripts/dream-place.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Dream Place</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="destination.html">Destinations</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="plan.html">Plan Trip</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Explore Your Dream Destination</h2>
-            <p>Find the perfect getaway! Browse top destinations, plan your trip, and get expert travel tips.</p>
-        </section>
-        
-        <section>
-            <h3>Popular Destinations</h3>
-            <div class="destination-grid">
-                <figure>
-                    <img src="images/destination1.jpg" alt="Tropical Beach">
-                    <figcaption>Tropical Beach</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/destination2.jpg" alt="Mountain Retreat">
-                    <figcaption>Mountain Retreat</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/destination3.jpg" alt="City Skyline">
-                    <figcaption>City Skyline</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
-        <p>Last Modified: <span id="lastmodified"></span></p>
-    </footer>
+  <header>
+    <h1>Dream Place</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="plan.html">Plan Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="trip-planner">
+      <h2>Plan Your Trip</h2>
+      <form id="trip-form">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Where do you want to go?" required>
+
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date" required>
+
+        <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" min="1" placeholder="e.g., 2" required>
+
+        <label for="budget">Budget (USD):</label>
+        <select id="budget" name="budget" required>
+          <option value="" disabled selected>Select your budget</option>
+          <option value="500-1000">$500 - $1000</option>
+          <option value="1000-2000">$1000 - $2000</option>
+          <option value="2000-5000">$2000 - $5000</option>
+          <option value="5000+">$5000+</option>
+        </select>
+
+        <fieldset>
+          <legend>What are you interested in?</legend>
+          <label><input type="checkbox" name="interests" value="beaches"> Beaches</label>
+          <label><input type="checkbox" name="interests" value="hiking"> Hiking</label>
+          <label><input type="checkbox" name="interests" value="cultural"> Cultural Tours</label>
+          <label><input type="checkbox" name="interests" value="adventure"> Adventure</label>
+        </fieldset>
+
+        <button type="submit" class="btn">Plan My Trip</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+  </footer>
 </body>
 </html>

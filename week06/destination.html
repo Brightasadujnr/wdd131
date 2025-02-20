@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
-        <meta name="author" content="Bright Asadu Junior">
-        <title>Dream Place - Travel Planner</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/dream-place.css">
-        <link rel="stylesheet" href="styles/large-dream-place.css">
-        <script src="scripts/dream-place.js" defer></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+  <meta name="author" content="Bright Asadu Junior">
+  <title>Dream Place - Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dream-place.css">
+  <link rel="stylesheet" href="styles/large-dream-place.css">
+  <script src="scripts/dream-place.js" defer></script>
+</head>
 <body>
-    <header>
-        <h1>Dream Place</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="destination.html">Destinations</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="plan.html">Plan Your Trip</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Dream Place</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <h2>Explore Your Dream Destination</h2>
+      <p>Find the perfect getaway! Browse top destinations, plan your trip, and get expert travel tips.</p>
+    </section>
     
-    <main>
-        <section>
-            <h2>Explore Your Dream Destination</h2>
-            <p>Find the perfect getaway! Browse top destinations, plan your trip, and get expert travel tips.</p>
-        </section>
+    <section class="featured-destinations">
+      <h2>Popular Destinations</h2>
+      <div class="destination-grid">
+        <!-- Destination Card 1 -->
+        <div class="destination-card">
+          <img src="images/bali.webp" alt="Bali, Indonesia">
+          <h3>Bali, Indonesia</h3>
+          <p>Known for its stunning beaches, vibrant culture, and lush landscapes, Bali is a paradise for travelers.</p>
+          <a href="bali.html" class="btn">Learn More</a>
+        </div>
         
-        <section>
-            <h3>Popular Destinations</h3>
-            <div class="destination-grid">
-                <img src="images/destination1.jpg" alt="Tropical Beach">
-                <img src="images/destination2.jpg" alt="Mountain Retreat">
-                <img src="images/destination3.jpg" alt="City Skyline">
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Dream Place. All Rights Reserved.</p>
-    </footer>
+        <!-- Destination Card 2 -->
+        <div class="destination-card">
+          <img src="images/paris.webp" alt="Paris, France">
+          <h3>Paris, France</h3>
+          <p>The City of Light is famous for its art, fashion, gastronomy, and iconic landmarks like the Eiffel Tower.</p>
+          <a href="paris.html" class="btn">Learn More</a>
+        </div>
+        
+        <!-- Destination Card 3 -->
+        <div class="destination-card">
+          <img src="images/maldives.webp" alt="Maldives">
+          <h3>Maldives</h3>
+          <p>Experience luxury and tranquility in this tropical paradise with crystal-clear waters and overwater villas.</p>
+          <a href="maldives.html" class="btn">Learn More</a>
+        </div>
+        
+        <!-- Destination Card 4 -->
+        <div class="destination-card">
+          <img src="images/japan.webp" alt="Japan">
+          <h3>Japan</h3>
+          <p>Discover the perfect blend of ancient traditions and modern innovation in this fascinating country.</p>
+          <a href="japan.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+  </footer>
 </body>
 </html>

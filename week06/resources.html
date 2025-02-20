@@ -1,64 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
-        <meta name="author" content="Bright Asadu Junior">
-        <title>Dream Place - Travel Destination</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/dream-place.css">
-        <link rel="stylesheet" href="styles/large-dream-place.css">
-        <script src="scripts/dream-place.js" defer></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+  <meta name="author" content="Bright Asadu Junior">
+  <title>Dream Place - Travel Resources</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dream-place.css">
+  <link rel="stylesheet" href="styles/large-dream-place.css">
+  <script src="scripts/dream-place.js" defer></script>
+</head>
 <body>
-    <header>
-        <h1>Dream Place</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="destination.html">Destinations</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="plan.html">Plan Trip</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Find Your Perfect Destination</h2>
-            <p>Discover amazing places, plan your journey, and make unforgettable memories.</p>
-            <a href="plan.html" class="btn">Start Planning</a>
-        </section>
-        
-        <section class="destinations-preview">
-            <h2>Popular Destinations</h2>
-            <div class="destination-grid">
-                <div class="destination">
-                    <img src="images/bali.jpg" alt="Bali">
-                    <h3>Bali, Indonesia</h3>
-                    <a href="destinations.html">Explore</a>
-                </div>
-                <div class="destination">
-                    <img src="images/paris.jpg" alt="Paris">
-                    <h3>Paris, France</h3>
-                    <a href="destinations.html">Explore</a>
-                </div>
-                <div class="destination">
-                    <img src="images/maldives.jpg" alt="Maldives">
-                    <h3>Maldives</h3>
-                    <a href="destinations.html">Explore</a>
-                </div>
-            </div>
-        </section>
-        
-        <section class="travel-quiz">
-            <h2>Not Sure Where to Go?</h2>
-            <p>Take our travel quiz to find the best destination for you!</p>
-            <a href="plan.html" class="btn">Take the Quiz</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Dream Place. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Dream Place</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="plan.html">Plan Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <h2>Travel Resources</h2>
+      <p>Find everything you need to plan your dream trip, from guides and tools to expert tips and recommendations.</p>
+    </section>
+
+    <!-- Travel Guides Section -->
+    <section class="travel-guides">
+      <h2>Travel Guides</h2>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3>Top 10 Destinations for 2025</h3>
+          <p>Discover the most popular destinations to visit next year.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="guide-card">
+          <h3>Packing Tips for Every Traveler</h3>
+          <p>Learn how to pack efficiently for any type of trip.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="guide-card">
+          <h3>Travel Safety Tips</h3>
+          <p>Stay safe and prepared while traveling with these essential tips.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Tools Section -->
+    <section class="travel-tools">
+      <h2>Travel Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card">
+          <h3>Budget Calculator</h3>
+          <p>Estimate the cost of your trip with this easy-to-use tool.</p>
+          <a href="plan.html" class="btn">Use Tool</a>
+        </div>
+        <div class="tool-card">
+          <h3>Packing Checklist</h3>
+          <p>Never forget an essential item with this customizable checklist.</p>
+          <a href="#" class="btn">Use Tool</a>
+        </div>
+        <div class="tool-card">
+          <h3>Visa Requirements Checker</h3>
+          <p>Find out if you need a visa for your destination.</p>
+          <a href="#" class="btn">Use Tool</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommended Websites Section -->
+    <section class="recommended-websites">
+      <h2>Recommended Websites</h2>
+      <div class="website-grid">
+        <div class="website-card">
+          <h3>Booking.com</h3>
+          <p>Book flights, hotels, and rental cars all in one place.</p>
+          <a href="https://www.booking.com" target="_blank" class="btn">Visit Site</a>
+        </div>
+        <div class="website-card">
+          <h3>TripAdvisor</h3>
+          <p>Read reviews and plan your itinerary with expert advice.</p>
+          <a href="https://www.tripadvisor.com" target="_blank" class="btn">Visit Site</a>
+        </div>
+        <div class="website-card">
+          <h3>Skyscanner</h3>
+          <p>Compare flights and find the best deals.</p>
+          <a href="https://www.skyscanner.com" target="_blank" class="btn">Visit Site</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="travel-tips">
+      <h2>Travel Tips</h2>
+      <div class="tip-grid">
+        <div class="tip-card">
+          <h3>Best Time to Travel</h3>
+          <p>Learn how to choose the perfect time for your trip.</p>
+        </div>
+        <div class="tip-card">
+          <h3>How to Save Money on Flights</h3>
+          <p>Discover tips for finding the cheapest flights.</p>
+        </div>
+        <div class="tip-card">
+          <h3>Traveling with Kids</h3>
+          <p>Make family trips stress-free with these tips.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+  </footer>
 </body>
 </html>

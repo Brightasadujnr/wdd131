@@ -175,11 +175,507 @@ body {
     font-weight: 600;
     transition: background 0.3s ease, color 0.3s ease;
   }
+
+  .trip-planner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trip-planner h2 {
+    text-align: center;
+    color: #005F73; /* Deep Ocean Blue */
+    margin-bottom: 20px;
+  }
+  
+  .trip-planner label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333; /* Dark Gray */
+  }
+  
+  .trip-planner input,
+  .trip-planner select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #005F73; /* Deep Ocean Blue */
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+  }
+  
+  .trip-planner input[type="date"] {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .trip-planner fieldset {
+    border: 1px solid #005F73; /* Deep Ocean Blue */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Featured Destinations Section */
+.featured-destinations {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-destinations h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.destination-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  font-size: 24px;
+  margin: 15px 0 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.destination-card p {
+  font-size: 16px;
+  padding: 0 15px;
+  color: #333333; /* Dark Gray */
+}
+
+/* Travel Guides Section */
+.travel-guides {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.travel-guides h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.guide-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.guide-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.guide-card p {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 15px;
+}
+
+.guide-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FFBA08; /* Sunny Yellow */
+  color: #333333; /* Dark Gray */
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.guide-card a:hover {
+  background: #005F73; /* Deep Ocean Blue */
+  color: #F2F2F2; /* Light Gray */
+}
+
+/* Travel Tools Section */
+.travel-tools {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.travel-tools h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tool-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.tool-card p {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 15px;
+}
+
+.tool-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FFBA08; /* Sunny Yellow */
+  color: #333333; /* Dark Gray */
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tool-card a:hover {
+  background: #005F73; /* Deep Ocean Blue */
+  color: #F2F2F2; /* Light Gray */
+}
+
+/* Recommended Websites Section */
+.recommended-websites {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recommended-websites h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.website-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.website-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.website-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.website-card p {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 15px;
+}
+
+.website-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FFBA08; /* Sunny Yellow */
+  color: #333333; /* Dark Gray */
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.website-card a:hover {
+  background: #005F73; /* Deep Ocean Blue */
+  color: #F2F2F2; /* Light Gray */
+}
+
+/* Travel Tips Section */
+.travel-tips {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.travel-tips h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tip-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(0, 95, 115, 0.8); /* Deep Ocean Blue with transparency */
+  color: #F2F2F2; /* Light Gray for text */
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #F2F2F2; /* Light Gray for heading */
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Mission Section */
+.mission {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.mission p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333333; /* Dark Gray */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.reason-card {
+  background: #FFFFFF; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reason-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.reason-card p {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 186, 8, 0.8); /* Sunny Yellow with transparency */
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.cta p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333333; /* Dark Gray */
+}
+
+.cta a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #005F73; /* Deep Ocean Blue */
+  color: #F2F2F2; /* Light Gray */
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta a:hover {
+  background: #FFBA08; /* Sunny Yellow */
+  color: #333333; /* Dark Gray */
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #005F73; /* Deep Ocean Blue */
+}
+
+.tip-card p {
+  font-size: 16px;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 15px;
+}
+
+.destination-card a {
+  display: block;
+  padding: 10px 15px;
+  background: #FFBA08; /* Sunny Yellow */
+  color: #333333; /* Dark Gray */
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.destination-card a:hover {
+  background: #005F73; /* Deep Ocean Blue */
+  color: #F2F2F2; /* Light Gray */
+}
+
+  .trip-planner legend {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #005F73; /* Deep Ocean Blue */
+    padding: 0 10px;
+  }
+  
+  .trip-planner button {
+    width: 100%;
+    padding: 10px;
+    background: #FFBA08; /* Sunny Yellow */
+    color: #333333; /* Dark Gray */
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .trip-planner button:hover {
+    background: #005F73; /* Deep Ocean Blue */
+    color: #F2F2F2; /* Light Gray */
+  }
   
   .btn:hover {
     background: #005F73; /* Deep Ocean Blue */
     color: #F2F2F2; /* Light Gray */
   }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
   
   /* Footer */
   .site-footer {

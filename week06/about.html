@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
-    <meta name="author" content="Bright Asadu Junior">
-    <title>Dream Place - Travel Planner</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/dream-place.css">
-    <link rel="stylesheet" href="styles/large-dream-place.css">
-    <script src="scripts/dream-place.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Asadu Junior's personal web page for WDD 131: Dynamic Web Fundamentals. Learn more about me, my location, and my favorite web development resources.">
+  <meta name="author" content="Bright Asadu Junior">
+  <title>Dream Place - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Bebas+Neue&family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dream-place.css">
+  <link rel="stylesheet" href="styles/large-dream-place.css">
+  <script src="scripts/dream-place.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Dream Place</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="destination.html">Destinations</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="plan.html">Plan Trip</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Dream Place</h2>
-            <p>Dream Place is your gateway to exploring the world's most breathtaking destinations. Our mission is to inspire and guide travelers in discovering their perfect getaway. Whether you're looking for adventure, relaxation, or cultural experiences, we provide resources to make your dream trip a reality.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
-        <p>Last Modified: <span id="lastmodified"></span></p>
-    </footer>
+  <header>
+    <h1>Dream Place</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="plan.html">Plan Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>About Dream Place</h2>
+      <p>Your gateway to exploring the world's most breathtaking destinations.</p>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>At Dream Place, our mission is to inspire and guide travelers in discovering their perfect getaway. Whether you're looking for adventure, relaxation, or cultural experiences, we provide the resources and tools to make your dream trip a reality.</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+      <h2>Why Choose Dream Place?</h2>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <h3>Expert Guidance</h3>
+          <p>Our team of travel experts provides personalized recommendations and tips to help you plan the perfect trip.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Comprehensive Resources</h3>
+          <p>From travel guides to budget calculators, we offer everything you need to plan your journey with ease.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Inspiring Destinations</h3>
+          <p>Explore our curated list of breathtaking destinations and find the one that speaks to your soul.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta">
+      <h2>Ready to Explore?</h2>
+      <p>Start planning your dream trip today and create unforgettable memories.</p>
+      <a href="destination.html" class="btn">Explore Destinations</a>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bright Junior Asadu, Accra, Ghana</p>
+    <p>Last Modified: <span id="lastmodified"></span></p>
+  </footer>
 </body>
 </html>
